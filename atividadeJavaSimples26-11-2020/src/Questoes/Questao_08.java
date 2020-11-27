@@ -16,13 +16,20 @@ public class Questao_08 {
 		*/
 		Fibonacci();
 	}
+	
 	public static void Fibonacci() {
-		long controle = 0;
-		System.out.println(1);
+		int controle = 0;
+		int aux1 = 0,aux2=1;
 		
-		for(int i = 2 ; controle < 100 ; i++ ) {
-			controle += (i-1) + (i-2);
+		System.out.println(aux1);
+		System.out.println(aux2);
 		
+		for(int i = 2 ; controle < 30 ; i++ ) {
+			
+			controle = aux1 + aux2;
+			aux1 = aux2;
+			aux2 = controle;
+			
 			System.out.println(controle);
 		}
 	} 
